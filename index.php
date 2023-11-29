@@ -35,3 +35,18 @@
                 <th>Usuario</th>
                 <th>Password</th>
             </tr>
+
+            </thead>
+        <tbody>
+            <?php
+            while($filas=mysqli_fetch_assoc($resultado)){
+            ?>
+        <tr>
+            <td><?php echo $filas['id'] ?></td>
+            <td><?php echo $filas['nombre'] ?></td>
+            <td><?php echo $filas['direccion'] ?></td>
+            <td><?php echo $filas['telefono'] ?></td>
+            <td><?php echo $filas['correo'] ?></td>
+            <td><?php echo $filas['nombre_usuario'] ?></td>
+            <td><?php echo $filas['password'] ?></td>
+            <td>
