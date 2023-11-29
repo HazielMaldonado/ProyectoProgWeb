@@ -50,3 +50,19 @@
             <td><?php echo $filas['nombre_usuario'] ?></td>
             <td><?php echo $filas['password'] ?></td>
             <td>
+            <?php echo "<a href='editar.php?id=".$filas['id']."'>EDITAR </a>"; ?>
+                -
+                <?php echo "<a href='eliminar.php?id=".$filas['id']."' onclick='return confirmar()'>ELIMINAR </a>"; ?>
+                 </td>
+        </tr>
+        <?php
+            }
+        ?>
+        </tbody>
+
+    </table>
+    <?php
+    mysqli_close($conexion);
+    ?>
+</body>
+</html>
