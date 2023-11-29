@@ -18,3 +18,20 @@
     $sql="select * from usuarios";
     $resultado=mysqli_query($conexion,$sql);
     ?>
+    
+
+
+
+    <h1>Lista de alumnos</h1>
+    <a href="agregar.php">Nuevo Alumno</a><br> <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Usuario</th>
+                <th>Password</th>
+            </tr>
