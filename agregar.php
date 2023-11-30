@@ -37,4 +37,31 @@
                         </script>";
 
             }
+            
+        }else{
+
+        }
+    ?>
+    <h1>Agregar Nuevo Alumno</h1>
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+    <label for="">Nombre:</label>
+    <input type="text" name="nombre"> <br>
+    <label for="">Direccion</label>
+    <input type="text" name="direccion"> <br>
+    <label for="">Telefono</label>
+    <input type="text" name="telefono"> <br>
+    <label for="">Correo</label>
+    <input type="text" name="correo"> <br> 
+    <label for="">Nombre_usuario</label>
+    <input type="text" name="nombre_usuario"> <br>   
+    <label for="">Password</label>
+    <input type="text" name="password"> <br>   
+    
+
+    <input type="submit" name="enviar" value="AGREGAR">
+    <a href="index.php"> Regresar</a>
+    </form>
+</body>
+</html>
+
 
