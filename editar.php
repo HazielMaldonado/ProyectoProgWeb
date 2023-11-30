@@ -54,3 +54,31 @@ include("conexion.php");
         mysqli_close($conexion);
 
     }
+    ?>
+
+    <h1>Editar alumno</h1>
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" value="<?php echo $nombre;?>"> <br>
+        <label for="">Direccion</label>
+        <input type="text" name="direccion" value="<?php echo $direccion;?>"> <br>
+        <label for="">Telefono</label>
+        <input type="text" name="telefono" value="<?php echo $telefono;?>"> <br>
+        <label for="">Correo</label>
+        <input type="text" name="correo" value="<?php echo $correo;?>"> <br>
+        <label for="">Usuario</label>
+        <input type="text" name="nombre_usuario" value="<?php echo $nombre_usuario;?>"> <br>
+        <label for="">Password</label>
+        <input type="text" name="password" value="<?php echo $password;?>"> <br>
+        
+        <input type="hidden" name="id" value="<?php echo $id;?>">
+
+        <input type="submit" name= "enviar" value="ACTUALIZAR">
+        <a href="index.php">Regresar</a>
+    </form>
+    <?php
+    ?>
+    
+</body>
+</html>
+
