@@ -16,3 +16,13 @@ th{
     background-color: rgb(221, 28, 28);
     color:white;
 }
+
+a:link, a:visited{
+    background-color: rgb(44, 44, 89);
+    color:white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
