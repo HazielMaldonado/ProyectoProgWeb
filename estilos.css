@@ -31,3 +31,7 @@ a:hover, a:active{
     background-color: lightblue;
     border-radius: 5px;
 }
+
+h1,h2,h3,h4{
+    text-align: center;
+}
